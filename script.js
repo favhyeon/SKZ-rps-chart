@@ -93,7 +93,7 @@ const PAIR_NAMES = {
     "felix-hyunjin": "필황", // 필릭스×현진
     "felix-han": "필쳌", // 필릭스×한
     "felix-felix": "필필", // 필릭스×필릭스
-    "felix-seungmin": "필승", // 필릭스×승민
+    "felix-seungmin": "냥첼", // 필릭스×승민
     "felix-ien": "필양", // 필릭스×아이엔
 
     "seungmin-bangchan": "승캥", // 승민×방찬
