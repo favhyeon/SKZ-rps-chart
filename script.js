@@ -43,7 +43,7 @@ function getActiveMembers() {
                 han(한), felix(필릭스), seungmin(승민), ien(아이엔) */
 const PAIR_NAMES = {
     "bangchan-bangchan": "캥캥", // 방찬×방찬
-    "bangchan-leeknow": "찬밍", // 방찬×리노
+    "bangchan-leeknow": "캥밍", // 방찬×리노
     "bangchan-changbin": "캥창", // 방찬×창빈
     "bangchan-hyunjin": "캥황", // 방찬×현진
     "bangchan-han": "캥쳌", // 방찬×한
@@ -55,13 +55,13 @@ const PAIR_NAMES = {
     "leeknow-leeknow": "믾믾", // 리노×리노
     "leeknow-changbin": "밍창", // 리노×창빈
     "leeknow-hyunjin": "믾황", // 리노×현진
-    "leeknow-han": "믾성", // 리노×한
+    "leeknow-han": "각뚜", // 리노×한
     "leeknow-felix": "믾필", // 리노×필릭스
     "leeknow-seungmin": "밍승", // 리노×승민
     "leeknow-ien": "믾양", // 리노×아이엔
 
     "changbin-bangchan": "창캥", // 창빈×방찬
-    "changbin-leeknow": "창릲", // 창빈×리노
+    "changbin-leeknow": "창밍", // 창빈×리노
     "changbin-changbin": "창창", // 창빈×창빈
     "changbin-hyunjin": "창황", // 창빈×현진
     "changbin-han": "창쳌", // 창빈×한
@@ -72,7 +72,7 @@ const PAIR_NAMES = {
     "hyunjin-bangchan": "황캥", // 현진×방찬
     "hyunjin-leeknow": "황밍", // 현진×리노
     "hyunjin-changbin": "황창", // 현진×창빈
-    "hyunjin-hyunjin": "황황", // 현진×현진
+    "hyunjin-hyunjin": "셉황", // 현진×현진
     "hyunjin-han": "황쳌", // 현진×한
     "hyunjin-felix": "황필", // 현진×필릭스
     "hyunjin-seungmin": "황승", // 현진×승민
@@ -106,7 +106,7 @@ const PAIR_NAMES = {
     "seungmin-ien": "승양", // 승민×아이엔
 
     "ien-bangchan": "양캥", // 아이엔×방찬
-    "ien-leeknow": "양믾", // 아이엔×리노
+    "ien-leeknow": "양밍", // 아이엔×리노
     "ien-changbin": "양창", // 아이엔×창빈
     "ien-hyunjin": "양황", // 아이엔×현진
     "ien-han": "양쳌", // 아이엔×한
