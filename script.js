@@ -61,7 +61,7 @@ const PAIR_NAMES = {
     "leeknow-ien": "믾양", // 리노×아이엔
 
     "changbin-bangchan": "창캥", // 창빈×방찬
-    "changbin-leeknow": "창밍", // 창빈×리노
+    "changbin-leeknow": "창릲", // 창빈×리노
     "changbin-changbin": "창창", // 창빈×창빈
     "changbin-hyunjin": "창황", // 창빈×현진
     "changbin-han": "창쳌", // 창빈×한
