@@ -33,20 +33,86 @@ function getActiveMembers() {
 /* ==========================================
    커플명(CP명) 전체 목록
    ------------------------------------------
-   "행멤버id-열멤버id": "표시할 이름" 형태로 특정 조합의 이름을
-   따로 정하고 싶을 때만 여기에 추가하면 됩니다.
-   여기에 없는 조합은 자동으로 (행 이니셜 + 열 이니셜)로 표시됩니다.
-   (예: "bangchan-leeknow"를 안 적으면 자동으로 "캥믾"이 됩니다.)
-
-   같은 멤버끼리의 조합(예: "bangchan-bangchan")은 "본인 조합명"이라고 부르고,
+   "행멤버id-열멤버id": "표시할 이름" 형태로 64개 조합이 전부 나열되어 있습니다.
+   원하는 CP명을 바꾸고 싶으면 아래에서 해당 줄의 " " 안 글자만 수정하면 됩니다.
+   (같은 멤버끼리의 조합, 예: "bangchan-bangchan"은 "본인 조합명"이라고 부르고
    화면 상단의 "본인 조합명 표시" 체크박스로 켜고 끌 수 있습니다.
-   꺼져 있으면 이 표의 값 대신 "-"이 표시됩니다.
+   꺼져 있으면 이 값 대신 "-"이 표시됩니다.)
 
-   멤버 id 목록: bangchan, leeknow, changbin, hyunjin, han, felix, seungmin, ien */
+   멤버 id 목록: bangchan(방찬), leeknow(리노), changbin(창빈), hyunjin(현진),
+                han(한), felix(필릭스), seungmin(승민), ien(아이엔) */
 const PAIR_NAMES = {
-    // 아래에 "행멤버-열멤버": "표시할 이름" 형태로 추가하면 그 조합만
-    // 원하는 이름으로 바뀝니다. 여기에 없는 조합은 자동으로
-    // (행 이니셜 + 열 이니셜)로 표시됩니다. (예: 캥+믾 → "캥믾")
+    "bangchan-bangchan": "캥캥", // 방찬×방찬
+    "bangchan-leeknow": "찬밍", // 방찬×리노
+    "bangchan-changbin": "캥창", // 방찬×창빈
+    "bangchan-hyunjin": "캥황", // 방찬×현진
+    "bangchan-han": "캥쳌", // 방찬×한
+    "bangchan-felix": "캥필", // 방찬×필릭스
+    "bangchan-seungmin": "캥승", // 방찬×승민
+    "bangchan-ien": "캥양", // 방찬×아이엔
+
+    "leeknow-bangchan": "밍캥", // 리노×방찬
+    "leeknow-leeknow": "믾믾", // 리노×리노
+    "leeknow-changbin": "밍창", // 리노×창빈
+    "leeknow-hyunjin": "믾황", // 리노×현진
+    "leeknow-han": "믾성", // 리노×한
+    "leeknow-felix": "믾필", // 리노×필릭스
+    "leeknow-seungmin": "밍승", // 리노×승민
+    "leeknow-ien": "믾양", // 리노×아이엔
+
+    "changbin-bangchan": "창캥", // 창빈×방찬
+    "changbin-leeknow": "창릲", // 창빈×리노
+    "changbin-changbin": "창창", // 창빈×창빈
+    "changbin-hyunjin": "창황", // 창빈×현진
+    "changbin-han": "창쳌", // 창빈×한
+    "changbin-felix": "창필", // 창빈×필릭스
+    "changbin-seungmin": "창승", // 창빈×승민
+    "changbin-ien": "창양", // 창빈×아이엔
+
+    "hyunjin-bangchan": "황캥", // 현진×방찬
+    "hyunjin-leeknow": "황밍", // 현진×리노
+    "hyunjin-changbin": "황창", // 현진×창빈
+    "hyunjin-hyunjin": "황황", // 현진×현진
+    "hyunjin-han": "황쳌", // 현진×한
+    "hyunjin-felix": "황필", // 현진×필릭스
+    "hyunjin-seungmin": "황승", // 현진×승민
+    "hyunjin-ien": "현양", // 현진×아이엔
+
+    "han-bangchan": "쳌캥", // 한×방찬
+    "han-leeknow": "한밍", // 한×리노
+    "han-changbin": "쳌창", // 한×창빈
+    "han-hyunjin": "쳌황", // 한×현진
+    "han-han": "쳌쳌", // 한×한
+    "han-felix": "쳌필", // 한×필릭스
+    "han-seungmin": "쳌첼", // 한×승민
+    "han-ien": "쳌양", // 한×아이엔
+
+    "felix-bangchan": "필캥", // 필릭스×방찬
+    "felix-leeknow": "필믾", // 필릭스×리노
+    "felix-changbin": "필창", // 필릭스×창빈
+    "felix-hyunjin": "필황", // 필릭스×현진
+    "felix-han": "필쳌", // 필릭스×한
+    "felix-felix": "필필", // 필릭스×필릭스
+    "felix-seungmin": "필승", // 필릭스×승민
+    "felix-ien": "필양", // 필릭스×아이엔
+
+    "seungmin-bangchan": "승캥", // 승민×방찬
+    "seungmin-leeknow": "승밍", // 승민×리노
+    "seungmin-changbin": "승창", // 승민×창빈
+    "seungmin-hyunjin": "승황", // 승민×현진
+    "seungmin-han": "첼쳌", // 승민×한
+    "seungmin-felix": "승필", // 승민×필릭스
+    "seungmin-seungmin": "승승", // 승민×승민
+    "seungmin-ien": "승양", // 승민×아이엔
+
+    "ien-bangchan": "양캥", // 아이엔×방찬
+    "ien-leeknow": "양믾", // 아이엔×리노
+    "ien-changbin": "양창", // 아이엔×창빈
+    "ien-hyunjin": "양황", // 아이엔×현진
+    "ien-han": "양쳌", // 아이엔×한
+    "ien-felix": "양필", // 아이엔×필릭스
+    "ien-seungmin": "양승", // 아이엔×승민
+    "ien-ien": "양양", // 아이엔×아이엔
 };
 
 function getPairName(rowId, colId) {
