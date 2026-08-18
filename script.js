@@ -55,7 +55,7 @@ const PAIR_NAMES = {
     "leeknow-leeknow": "믾믾", // 리노×리노
     "leeknow-changbin": "밍창", // 리노×창빈
     "leeknow-hyunjin": "믾황", // 리노×현진
-    "leeknow-han": "각뚜", // 리노×한
+    "leeknow-han": "믾성", // 리노×한
     "leeknow-felix": "믾필", // 리노×필릭스
     "leeknow-seungmin": "밍승", // 리노×승민
     "leeknow-ien": "믾양", // 리노×아이엔
