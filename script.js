@@ -106,7 +106,7 @@ const PAIR_NAMES = {
     "seungmin-ien": "승양", // 승민×아이엔
 
     "ien-bangchan": "양캥", // 아이엔×방찬
-    "ien-leeknow": "양밍", // 아이엔×리노
+    "ien-leeknow": "양믾", // 아이엔×리노
     "ien-changbin": "양창", // 아이엔×창빈
     "ien-hyunjin": "양황", // 아이엔×현진
     "ien-han": "양쳌", // 아이엔×한
